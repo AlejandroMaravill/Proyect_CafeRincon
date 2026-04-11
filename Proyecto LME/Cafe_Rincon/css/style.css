@@ -824,18 +824,13 @@ a:hover { color: var(--dorado); text-decoration: none; }
     margin-bottom: 16px;
 }
 
-/* --- SECCIÓN: Historia - Placeholder de imagen --- */
+/* --- SECCIÓN: Historia - Imagen de los fundadores --- */
 .img-placeholder {
-    background: linear-gradient(160deg, #2C4A2E, #B8943A);
+    background-image: url('../img/nuestra-historia.png');
+    background-size: cover;
+    background-position: center;
     height: 280px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     margin-bottom: 18px;
-}
-
-.img-placeholder span {
-    font-size: 80px;
 }
 
 /* --- SECCIÓN: Stats/Estadísticas - Contenedor --- */
