@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Café Rincón</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <div id="nav"></div>
+
+    <!-- CABECERA -->
+    <div class="cab-pagina">
+        <div class="container">
+            <h1>Galería y Ubicación</h1>
+            <p class="ruta"><a href="index.html">Inicio</a> / Galería</p>
+        </div>
+    </div>
+
+    <!-- GALERÍA-->
+    <section class="seccion">
+        <div class="container">
+            <div class="titulo-s">
+                <h2>Nuestros Platillos</h2>
+                <div class="raya"></div>
+                <p>Una muestra de lo que cocinamos cada día con ingredientes frescos.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="g-item">
+                        <div class="slot v1">&#129377;</div>
+                    </div>
+                    <p class="text-center galeria-label">Lomo a las Brasas</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="g-item">
+                        <div class="slot v1">&#129377;</div>
+                    </div>
+                    <p class="text-center galeria-label">Camarones al Ajillo</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="g-item">
+                        <div class="slot v1">&#129377;</div>
+                    </div>
+                    <p class="text-center galeria-label">Pollo al Tamarindo</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="g-item">
+                        <div class="slot v1">&#129377;</div>
+                    </div>
+                    <p class="text-center galeria-label">Tres Leches Artesanal</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="g-item">
+                        <div class="slot v1">&#129377;</div>
+                    </div>
+                    <p class="text-center galeria-label">Volcán de Chocolate</p>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="g-item">
+                        <div class="slot v1">&#129377;</div>
+                    </div>
+                    <p class="text-center galeria-label">Café de Altura</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTALACIONES-->
+    <section class="seccion-alt">
+        <div class="container">
+            <div class="titulo-s">
+                <h2>Nuestro Local</h2>
+                <div class="raya"></div>
+                <p>Espacios pensados para que te sientas cómodo y disfrutes cada visita.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card-instalacion">
+                        <div class="card-instalacion-banner verde">&#127968;</div>
+                        <h4>Salón Principal</h4>
+                        <p>Capacidad para 60 personas distribuidas en mesas
+                            de 2 a 6. Ambiente rústico con iluminación cálida, música ambiental y aire acondicionado.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <div class="card-instalacion">
+                        <div class="card-instalacion-banner dorado">&#127795;</div>
+                        <h4>Terraza</h4>
+                        <p>Terraza al aire libre con techumbre, capacidad
+                            para 25 personas. Disponible los viernes y sábados por la noche para cenas con vista al
+                            jardín.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- UBICACIÓN -->
+    <section class="seccion">
+        <div class="container">
+            <div class="titulo-s">
+                <h2>¿Cómo Llegar?</h2>
+                <div class="raya"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="mapa-ubicacion">
+                        <div>
+                            <p class="mapa-ubicacion-icono">&#128205;</p>
+                            <p class="mapa-ubicacion-titulo"><strong>3a Calle Poniente #18, Col. Escalón</strong></p>
+                            <p>San Salvador, El Salvador</p>
+                            <p class="mapa-ubicacion-nota">[Aquí iría el iframe de Google Maps]</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="dato">
+                        <span class="ico">&#128661;</span>
+                        <div>
+                            <h5>En vehículo</h5>
+                            <p>Desde el Bulevar del Hipódromo tomar la 77a Calle Poniente hacia el norte. Parqueo
+                                privado disponible para clientes.</p>
+                        </div>
+                    </div>
+                    <div class="dato">
+                        <span class="ico">&#128652;</span>
+                        <div>
+                            <h5>Bus</h5>
+                            <p>Rutas 30B y 52 pasan a dos cuadras. Bajarse en parada "Col. Escalón Norte".</p>
+                        </div>
+                    </div>
+                    <div class="dato">
+                        <span class="ico">&#128222;</span>
+                        <div>
+                            <h5>¿Necesitas ayuda?</h5>
+                            <p>Llámanos: <strong>+503 2210-3456</strong></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE -->
+    <div id="fot"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../componentes/nav.html")
+                .then(r => r.text())
+                .then(data => {
+                    document.getElementById("nav").innerHTML = data;
+                });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../componentes/footer.html")
+                .then(r => r.text())
+                .then(data => {
+                    document.getElementById("fot").innerHTML = data;
+                });
+        });
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

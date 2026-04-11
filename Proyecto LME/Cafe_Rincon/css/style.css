@@ -1,0 +1,781 @@
+/* ============================================
+   CAFÉ RINCÓN — Hoja de Estilos
+   Lenguaje de Marcado, Diseño Web y Gestores de Contenido
+   Universidad Don Bosco
+   ============================================ */
+
+/* --- Variables --- */
+:root {
+    --verde:    #2C4A2E;
+    --dorado:   #B8943A;
+    --fondo:    #F9F6F0;
+    --gris:     #F0EDE6;
+    --texto:    #2A2A2A;
+    --suave:    #6A6055;
+    --borde:    #DDD5C5;
+    --fuente-t: Georgia, 'Times New Roman', serif;
+    --fuente-c: 'Trebuchet MS', Verdana, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: var(--fuente-c);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+h1, h2, h3, h4 { font-family: var(--fuente-t); }
+
+a { color: var(--verde); text-decoration: none; }
+a:hover { color: var(--dorado); text-decoration: none; }
+
+/* ============================================
+   NAVEGACIÓN
+   ============================================ */
+.navbar-rincon {
+    background-color: var(--verde);
+    border-bottom: 3px solid var(--dorado);
+    padding: 0;
+}
+.navbar-rincon .navbar-brand {
+    color: var(--dorado);
+    font-family: var(--fuente-t);
+    font-size: 22px;
+    font-style: italic;
+    padding: 14px 15px;
+}
+.navbar-rincon .navbar-brand:hover { color: #fff; }
+
+.navbar-rincon .nav-link {
+    color: #C8D8C0 !important;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 22px 13px !important;
+}
+.navbar-rincon .nav-link:hover,
+.navbar-rincon .nav-link.activo {
+    color: var(--dorado) !important;
+}
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28184,148,58,1%29' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+/* ============================================
+   HERO
+   ============================================ */
+.hero {
+    background-color: var(--verde);
+    background-image: repeating-linear-gradient(
+        -45deg,
+        transparent,
+        transparent 18px,
+        rgba(184,148,58,0.05) 18px,
+        rgba(184,148,58,0.05) 36px
+    );
+    padding: 80px 0 70px;
+    text-align: center;
+}
+.hero .etiqueta {
+    color: var(--dorado);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+.hero h1 {
+    color: #fff;
+    font-size: 48px;
+    font-style: italic;
+    margin-bottom: 14px;
+}
+.hero p {
+    color: #C8D8C0;
+    font-size: 16px;
+    max-width: 520px;
+    margin: 0 auto 28px;
+}
+
+/* ============================================
+   BOTONES
+   ============================================ */
+.btn-rincon {
+    background-color: var(--dorado);
+    color: var(--verde);
+    border: 2px solid var(--dorado);
+    padding: 10px 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+    display: inline-block;
+    font-family: var(--fuente-c);
+    font-weight: bold;
+}
+.btn-rincon:hover {
+    background-color: transparent;
+    color: var(--dorado);
+}
+.btn-rincon-borde {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    padding: 10px 28px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 0;
+    display: inline-block;
+    font-family: var(--fuente-c);
+    margin-left: 8px;
+}
+.btn-rincon-borde:hover {
+    background-color: #fff;
+    color: var(--verde);
+}
+
+/* ============================================
+   SECCIONES
+   ============================================ */
+.seccion     { padding: 60px 0; }
+.seccion-alt { padding: 60px 0; background-color: var(--gris); }
+
+.titulo-s {
+    text-align: center;
+    margin-bottom: 40px;
+}
+.titulo-s h2 {
+    font-size: 32px;
+    color: var(--verde);
+    font-style: italic;
+    margin-bottom: 8px;
+}
+.titulo-s .raya {
+    width: 50px;
+    height: 3px;
+    background: var(--dorado);
+    margin: 0 auto 12px;
+}
+.titulo-s p {
+    color: var(--suave);
+    font-size: 14px;
+    max-width: 480px;
+    margin: 0 auto;
+}
+
+/* ============================================
+   CARDS DE PLATILLOS
+   ============================================ */
+.card-plato {
+    background: #fff;
+    border: 1px solid var(--borde);
+    margin-bottom: 24px;
+}
+.card-plato .img-slot {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+}
+.card-plato .info {
+    padding: 16px 18px;
+}
+.card-plato .etiqueta-cat {
+    background: var(--dorado);
+    color: var(--verde);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 2px 8px;
+    display: inline-block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.card-plato h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--texto);
+}
+.card-plato p {
+    font-size: 13px;
+    color: var(--suave);
+    margin-bottom: 10px;
+}
+.card-plato .precio {
+    font-size: 18px;
+    font-family: var(--fuente-t);
+    color: var(--verde);
+    font-weight: bold;
+}
+
+/* ============================================
+   CABECERA DE PÁGINA INTERNA
+   ============================================ */
+.cab-pagina {
+    background: var(--verde);
+    padding: 38px 0;
+    text-align: center;
+    border-bottom: 3px solid var(--dorado);
+}
+.cab-pagina h1 {
+    color: #fff;
+    font-size: 34px;
+    font-style: italic;
+    margin-bottom: 5px;
+}
+.cab-pagina .ruta {
+    color: #A8C8A0;
+    font-size: 13px;
+}
+.cab-pagina .ruta a { color: var(--dorado); }
+
+/* ============================================
+   TABLA
+   ============================================ */
+.tabla-simple th {
+    background-color: var(--verde);
+    color: #fff;
+    padding: 10px 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 12px;
+    font-family: var(--fuente-c);
+}
+.tabla-simple td {
+    padding: 10px 14px;
+    border-bottom: 1px solid var(--borde);
+    font-size: 14px;
+}
+.tabla-simple tr:nth-child(even) td { background: var(--gris); }
+
+/* ============================================
+   FORMULARIO
+   ============================================ */
+.caja-form {
+    background: #fff;
+    border: 1px solid var(--borde);
+    padding: 32px 28px;
+}
+.caja-form label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--texto);
+    font-weight: bold;
+    margin-bottom: 4px;
+    display: block;
+}
+.caja-form .form-control {
+    border-radius: 0;
+    border: 1px solid var(--borde);
+    background-color: var(--fondo);
+    font-size: 14px;
+    padding: 9px 12px;
+    color: var(--texto);
+}
+.caja-form .form-control:focus {
+    border-color: var(--dorado);
+    box-shadow: 0 0 0 2px rgba(184,148,58,0.2);
+    outline: none;
+}
+
+/* ============================================
+   DATO DE CONTACTO
+   ============================================ */
+.dato {
+    display: flex;
+    gap: 14px;
+    margin-bottom: 20px;
+    align-items: flex-start;
+}
+.dato .ico {
+    font-size: 22px;
+    color: var(--dorado);
+    flex-shrink: 0;
+    margin-top: 2px;
+}
+.dato h5 {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--verde);
+    margin-bottom: 2px;
+}
+.dato p { font-size: 14px; margin: 0; color: var(--suave); }
+
+/* ============================================
+   CITA OSCURA
+   ============================================ */
+.cita-bloque {
+    background: var(--verde);
+    padding: 50px 0;
+    text-align: center;
+}
+.cita-bloque blockquote {
+    font-family: var(--fuente-t);
+    font-size: 20px;
+    font-style: italic;
+    color: var(--dorado);
+    max-width: 600px;
+    margin: 0 auto 8px;
+    line-height: 1.6;
+}
+.cita-bloque cite {
+    color: #A8C8A0;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ============================================
+   PROMOCIÓN
+   ============================================ */
+.card-promo {
+    background: var(--verde);
+    color: #fff;
+    padding: 26px 22px;
+    margin-bottom: 24px;
+    border-bottom: 4px solid var(--dorado);
+}
+.card-promo h3 {
+    color: var(--dorado);
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+.card-promo p {
+    color: #C0D0B8;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.card-promo .p-antes {
+    text-decoration: line-through;
+    color: #8A9A82;
+    font-size: 14px;
+}
+.card-promo .p-nuevo {
+    font-size: 26px;
+    font-family: var(--fuente-t);
+    color: var(--dorado);
+    font-weight: bold;
+}
+.card-promo .vigencia {
+    font-size: 12px;
+    color: #8A9A82;
+    font-style: italic;
+    margin-top: 8px;
+}
+
+/* ============================================
+   GALERÍA
+   ============================================ */
+.g-item {
+    margin-bottom: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+.g-item .slot {
+    width: 100%;
+    height: 195px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    color: #fff;
+}
+.g-item .slot.v1 { background: var(--verde); }
+.g-item .slot.v2 { background: #3D6B40; }
+.g-item .slot.v3 { background: #1E3020; }
+.g-item .slot.d1 { background: var(--dorado); }
+.g-item .slot.d2 { background: #8A6C20; }
+.g-item .slot.d3 { background: #5A4510; }
+
+/* ============================================
+   PIE DE PÁGINA
+   ============================================ */
+.pie {
+    background: var(--verde);
+    padding: 45px 0 18px;
+    color: #A8C0A0;
+    font-size: 14px;
+}
+.pie h5 {
+    color: var(--dorado);
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    font-family: var(--fuente-c);
+}
+.pie p, .pie ul li { color: #A8C0A0; line-height: 2; }
+.pie ul { list-style: none; padding: 0; margin: 0; }
+.pie ul li a { color: #A8C0A0; font-size: 14px; }
+.pie ul li a:hover { color: var(--dorado); }
+.pie .linea { border-top: 1px solid #3A5A3A; margin: 28px 0 16px; }
+.pie .copy { text-align: center; color: #5A7A5A; font-size: 12px; }
+
+/* ============================================
+   MEDIA QUERIES
+   ============================================ */
+
+/* Tabletas: hasta 1024px */
+@media (max-width: 1024px) {
+    .hero h1 { font-size: 38px; }
+}
+
+/* Tabletas pequeñas: hasta 768px */
+@media (max-width: 768px) {
+    .hero { padding: 55px 20px 50px; }
+    .hero h1 { font-size: 30px; }
+    .hero p { font-size: 14px; }
+    .seccion, .seccion-alt { padding: 42px 0; }
+    .titulo-s h2 { font-size: 26px; }
+    .cab-pagina h1 { font-size: 26px; }
+    .cita-bloque blockquote { font-size: 17px; padding: 0 20px; }
+    .btn-rincon-borde { margin-left: 0; margin-top: 10px; }
+    .caja-form { padding: 22px 16px; }
+}
+
+/* Móviles: hasta 480px */
+@media (max-width: 480px) {
+    .hero h1 { font-size: 24px; }
+    .hero .etiqueta { letter-spacing: 2px; }
+    .titulo-s h2 { font-size: 22px; }
+    .card-plato .img-slot { height: 150px; }
+    .g-item .slot { height: 160px; }
+    .pie { padding: 30px 0 14px; text-align: center; }
+    .dato { flex-direction: column; }
+    .card-promo .p-nuevo { font-size: 22px; }
+}
+
+
+
+/*CSS INDEX EXTRAIDO*/
+/* =============================================
+   ESTILOS EXTRAÍDOS DE index.html
+   Café Rincón
+   ============================================= */
+
+/* --- SECCIÓN: ¿Por qué elegirnos? --- */
+.icono-razon {
+    font-size: 36px;
+    margin-bottom: 8px;
+}
+
+.titulo-razon {
+    color: var(--verde);
+}
+
+.texto-razon {
+    font-size: 14px;
+    color: var(--suave);
+}
+
+/* --- SECCIÓN: Platos destacados --- */
+.img-slot-parrilla {
+    background: linear-gradient(135deg, #2C4A2E, #1A2E1C);
+}
+
+.img-slot-mar {
+    background: linear-gradient(135deg, #B8943A, #7A5A18);
+}
+
+.img-slot-postre {
+    background: linear-gradient(135deg, #5A3A18, #3A2008);
+}
+
+.btn-ver-carta {
+    margin-top: 10px;
+}
+
+/* --- SECCIÓN: Horarios y Encuéntranos --- */
+.titulo-seccion-lateral {
+    font-style: italic;
+    color: var(--verde);
+    border-left: 4px solid var(--dorado);
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.mapa-placeholder {
+    background: var(--fondo);
+    border: 1px dashed var(--borde);
+    height: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--suave);
+}
+
+.mapa-icono {
+    font-size: 32px;
+    margin: 0;
+}
+
+.mapa-direccion {
+    margin: 5px 0 0;
+}
+
+/* --- SECCIÓN: CTA Reservación --- */
+.seccion-cta {
+    background: var(--dorado);
+    padding: 45px 0;
+    text-align: center;
+}
+
+.cta-titulo {
+    color: var(--verde);
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.cta-subtitulo {
+    color: var(--verde);
+    font-size: 15px;
+    margin-bottom: 22px;
+    opacity: 0.85;
+}
+
+.cta-btn {
+    border-color: var(--verde);
+}
+
+
+
+/*CSS EXTRAIDO DE GALERIA*/
+/* =============================================
+   ESTILOS EXTRAÍDOS DE galeria.html
+   Café Rincón
+   ============================================= */
+
+/* --- SECCIÓN: Galería - Pie de cada imagen --- */
+.galeria-label {
+    font-size: 13px;
+    color: var(--suave);
+    margin-top: 6px;
+}
+
+/* --- SECCIÓN: Instalaciones - Tarjeta contenedora --- */
+.card-instalacion {
+    background: #fff;
+    border: 1px solid var(--borde);
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+/* --- SECCIÓN: Instalaciones - Banner superior de la tarjeta --- */
+.card-instalacion-banner {
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 54px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.card-instalacion-banner.verde {
+    background: var(--verde);
+}
+
+.card-instalacion-banner.dorado {
+    background: var(--dorado);
+}
+
+/* --- SECCIÓN: Instalaciones - Título y texto --- */
+.card-instalacion h4 {
+    color: var(--verde);
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.card-instalacion p {
+    font-size: 14px;
+    color: var(--suave);
+}
+
+/* --- SECCIÓN: Ubicación - Mapa placeholder --- */
+.mapa-ubicacion {
+    background: var(--gris);
+    border: 1px dashed var(--borde);
+    height: 260px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--suave);
+}
+
+.mapa-ubicacion-icono {
+    font-size: 40px;
+    margin: 0 0 8px;
+}
+
+.mapa-ubicacion-titulo {
+    font-size: 16px;
+    color: var(--texto);
+}
+
+.mapa-ubicacion-nota {
+    font-size: 12px;
+    color: #B0A090;
+}
+
+
+/*CSS DE CONTACTOS*/
+
+/* =============================================
+   ESTILOS EXTRAÍDOS DE contacto.html
+   Café Rincón
+   ============================================= */
+
+/* --- SECCIÓN: Formulario - Título y subtítulo --- */
+.form-titulo {
+    color: var(--verde);
+    font-style: italic;
+    margin-bottom: 5px;
+}
+
+.form-subtitulo {
+    font-size: 14px;
+    color: var(--suave);
+    margin-bottom: 22px;
+}
+
+/* --- SECCIÓN: Formulario - Botón enviar --- */
+.btn-enviar {
+    width: 100%;
+    padding: 13px;
+    font-size: 14px;
+}
+
+/* --- SECCIÓN: Panel lateral - Tarjeta de contacto --- */
+.card-contacto {
+    background: #fff;
+    border: 1px solid var(--borde);
+    padding: 22px;
+    margin-bottom: 20px;
+}
+
+.card-contacto h4 {
+    color: var(--verde);
+    font-style: italic;
+    border-left: 4px solid var(--dorado);
+    padding-left: 10px;
+    margin-bottom: 18px;
+}
+
+/* --- SECCIÓN: Panel lateral - Bloque de horarios --- */
+.card-horarios {
+    background: var(--verde);
+    padding: 22px;
+}
+
+.card-horarios-titulo {
+    color: var(--dorado);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Trebuchet MS', sans-serif;
+    margin-bottom: 14px;
+}
+
+.card-horarios p {
+    color: #C0D8B8;
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+
+.card-horarios p:last-child {
+    margin-bottom: 0;
+}
+
+/*CSS EXTRAIDO DE MENU*/
+
+/* =============================================
+   ESTILOS EXTRAÍDOS DE menu.html
+   Café Rincón
+   ============================================= */
+
+/* --- SECCIÓN: Aviso superior --- */
+.aviso-menu {
+    background: var(--gris);
+    padding: 16px 0;
+    border-bottom: 1px solid var(--borde);
+    text-align: center;
+}
+
+.aviso-menu p {
+    font-size: 14px;
+    color: var(--suave);
+    margin: 0;
+}
+
+/* --- SECCIÓN: Títulos de categoría (Entradas, Platos Fuertes, Bebidas, Postres) --- */
+.titulo-categoria {
+    color: var(--verde);
+    font-style: italic;
+    border-left: 4px solid var(--dorado);
+    padding-left: 12px;
+    margin: 0 0 20px;
+}
+
+.titulo-categoria.con-margen {
+    margin: 30px 0 20px;
+}
+
+/* --- SECCIÓN: img-slot por colores de cada plato --- */
+
+/* Entradas */
+.img-slot-ceviche {
+    background: linear-gradient(135deg, #B8943A, #7A5A18);
+}
+
+.img-slot-sopa {
+    background: linear-gradient(135deg, #4A6A2A, #2A4010);
+}
+
+.img-slot-ensalada {
+    background: linear-gradient(135deg, #3A6A3A, #1A3A1A);
+}
+
+/* Platos fuertes */
+.img-slot-lomo {
+    background: linear-gradient(135deg, #2C4A2E, #1A2E1C);
+}
+
+.img-slot-camarones {
+    background: linear-gradient(135deg, #1A4A6A, #0A2A3A);
+}
+
+.img-slot-pollo {
+    background: linear-gradient(135deg, #6A3A18, #3A1808);
+}
+
+.img-slot-fettuccine {
+    background: linear-gradient(135deg, #4A3A6A, #2A1A3A);
+}
+
+.img-slot-risotto {
+    background: linear-gradient(135deg, #2A6A2A, #0A3A0A);
+}
+
+/* Postres */
+.img-slot-tresleches {
+    background: linear-gradient(135deg, #B8943A, #7A5A18);
+}
+
+.img-slot-volcan {
+    background: linear-gradient(135deg, #3A1808, #1A0A05);
+}
+
+.img-slot-flan {
+    background: linear-gradient(135deg, #1A6A4A, #0A3A2A);
+}

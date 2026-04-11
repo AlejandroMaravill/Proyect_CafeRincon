@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promociones - Café Rincón</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAV-->
+    <div id="nav"></div>
+
+    <!-- CABECERA -->
+    <div class="cab-pagina">
+        <div class="container">
+            <h1>Promociones</h1>
+            <p class="ruta"><a href="index.html">Inicio</a> / Promociones</p>
+        </div>
+    </div>
+
+    <!-- CARDS DE PROMO-->
+    <section class="seccion">
+        <div class="container">
+            <div class="titulo-s">
+                <h2>Ofertas de la Semana</h2>
+                <div class="raya"></div>
+                <p>Consulta siempre la vigencia antes de visitarnos. ¡Cambian cada semana!</p>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card-promo">
+                        <h3>&#127175; Martes de Parrilla</h3>
+                        <p>Lomo a las brasas + bebida de la casa + postre del día. ¡El martes más sabroso de la semana!
+                        </p>
+                        <p class="p-antes">Precio normal: $13.50</p>
+                        <p class="p-nuevo">$10.00</p>
+                        <a href="contacto.html" class="btn-rincon"
+                            style="font-size:12px; padding:7px 18px; margin-top:8px;">Reservar</a>
+                        <p class="vigencia">Solo martes, en el local.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card-promo" style="background:#1A3A1A;">
+                        <h3>&#128106; Menú Familiar</h3>
+                        <p>Para 4 personas: 4 platos fuertes a elegir, 4 bebidas naturales y 2 postres para compartir.
+                        </p>
+                        <p class="p-antes">Valor estimado: $48.00</p>
+                        <p class="p-nuevo">$36.00</p>
+                        <a href="contacto.html" class="btn-rincon"
+                            style="font-size:12px; padding:7px 18px; margin-top:8px;">Reservar</a>
+                        <p class="vigencia">Viernes a domingo. Requiere reservación.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card-promo" style="background:#1A2A3A;">
+                        <h3>&#127860; Almuerzo Ejecutivo</h3>
+                        <p>Entrada + plato fuerte del día + bebida natural. Rápido, rico y a buen precio para tu hora de
+                            almuerzo.</p>
+                        <p class="p-antes">Valor estimado: $17.00</p>
+                        <p class="p-nuevo">$11.50</p>
+                        <a href="contacto.html" class="btn-rincon"
+                            style="font-size:12px; padding:7px 18px; margin-top:8px;">Reservar</a>
+                        <p class="vigencia">Lun–Vie de 12:00 a 2:30 pm.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TABLA-->
+    <section class="seccion-alt">
+        <div class="container">
+            <div class="titulo-s">
+                <h2>Resumen de Promociones</h2>
+                <div class="raya"></div>
+            </div>
+            <div class="table-responsive">
+                <table class="table tabla-simple table-bordered table-striped">
+                    <thead>
+                        <tr>
+                            <th>Promoción</th>
+                            <th>Qué incluye</th>
+                            <th>Días</th>
+                            <th>Horario</th>
+                            <th>Condición</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Martes de Parrilla</strong></td>
+                            <td>Lomo + bebida + postre</td>
+                            <td>Martes</td>
+                            <td>Todo el día</td>
+                            <td>Solo en el local</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Menú Familiar</strong></td>
+                            <td>4 platos + 4 bebidas + 2 postres</td>
+                            <td>Vie - Dom</td>
+                            <td>Todo el día</td>
+                            <td>Reservación previa</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Almuerzo Ejecutivo</strong></td>
+                            <td>Entrada + fuerte + bebida</td>
+                            <td>Lun - Vie</td>
+                            <td>12:00 - 2:30 pm</td>
+                            <td>Hasta agotar existencias</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Cumpleaños</strong></td>
+                            <td>Postre gratis + 15% descuento</td>
+                            <td>Todos</td>
+                            <td>Todo el día</td>
+                            <td>Presentar DUI</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Descuento Estudiantil</strong></td>
+                            <td>10% en toda la carta</td>
+                            <td>Miércoles</td>
+                            <td>Todo el día</td>
+                            <td>Carné estudiantil vigente</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section style="background:var(--dorado); padding:45px 0; text-align:center;">
+        <div class="container">
+            <h2 style="color:var(--verde); font-style:italic; margin-bottom:8px;">¿Listo para aprovechar?</h2>
+            <p style="color:var(--verde); margin-bottom:20px; opacity:0.85;">Reserva tu mesa y garantiza tu lugar.</p>
+            <a href="contacto.html" class="btn-rincon" style="border-color:var(--verde);">Reservar Mesa</a>
+        </div>
+    </section>
+
+    <!-- PIE -->
+    <div id="fot"></div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../componentes/nav.html")
+                .then(r => r.text())
+                .then(data => {
+                    document.getElementById("nav").innerHTML = data;
+                });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../componentes/footer.html")
+                .then(r => r.text())
+                .then(data => {
+                    document.getElementById("fot").innerHTML = data;
+                });
+        });
+    </script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>

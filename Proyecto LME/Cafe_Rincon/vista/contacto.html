@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Café Rincón</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVEGACIÓN -->
+    <div id="nav"></div>
+
+    <!-- CABECERA -->
+    <div class="cab-pagina">
+        <div class="container">
+            <h1>Contacto y Reservaciones</h1>
+            <p class="ruta"><a href="index.html">Inicio</a> / Contacto</p>
+        </div>
+    </div>
+
+    <!-- FORMULARIO: col-md-7 + col-md-5 -->
+    <section class="seccion">
+        <div class="container">
+            <div class="row">
+
+                <!-- Formulario de reservación -->
+                <div class="col-md-7">
+                    <div class="caja-form">
+                        <h3 class="form-titulo">Reservar una Mesa</h3>
+                        <p class="form-subtitulo">Completa el formulario y te
+                            confirmamos en menos de 2 horas en horario de atención.</p>
+
+                        <form role="form">
+                            <!-- Nombre y apellido-->
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="nombre">Nombre *</label>
+                                        <input type="text" class="form-control" id="nombre" name="nombre"
+                                            placeholder="Tu nombre" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="apellido">Apellido *</label>
+                                        <input type="text" class="form-control" id="apellido" name="apellido"
+                                            placeholder="Tu apellido" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Email y teléfono -->
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="email">Correo electrónico *</label>
+                                        <input type="email" class="form-control" id="email" name="email"
+                                            placeholder="correo@ejemplo.com" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="telefono">Teléfono *</label>
+                                        <input type="tel" class="form-control" id="telefono" name="telefono"
+                                            placeholder="+503 0000-0000" required>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Fecha y hora -->
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="fecha">Fecha *</label>
+                                        <input type="date" class="form-control" id="fecha" name="fecha" required>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="hora">Hora *</label>
+                                        <select class="form-control" id="hora" name="hora" required>
+                                            <option value="">-- Seleccionar --</option>
+                                            <option>12:00 pm</option>
+                                            <option>12:30 pm</option>
+                                            <option>1:00 pm</option>
+                                            <option>1:30 pm</option>
+                                            <option>6:00 pm</option>
+                                            <option>6:30 pm</option>
+                                            <option>7:00 pm</option>
+                                            <option>7:30 pm</option>
+                                            <option>8:00 pm</option>
+                                            <option>8:30 pm</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Personas y ocasión -->
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="personas">Número de personas *</label>
+                                        <select class="form-control" id="personas" name="personas" required>
+                                            <option value="">-- Seleccionar --</option>
+                                            <option>1 persona</option>
+                                            <option>2 personas</option>
+                                            <option>3 personas</option>
+                                            <option>4 personas</option>
+                                            <option>5 personas</option>
+                                            <option>6 personas</option>
+                                            <option>Más de 6 personas</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <label for="ocasion">Ocasión especial</label>
+                                        <select class="form-control" id="ocasion" name="ocasion">
+                                            <option value="">-- Sin ocasión --</option>
+                                            <option>Cumpleaños</option>
+                                            <option>Aniversario</option>
+                                            <option>Reunión de negocios</option>
+                                            <option>Reunión familiar</option>
+                                            <option>Graduación</option>
+                                            <option>Otro</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Comentarios -->
+                            <div class="form-group">
+                                <label for="comentarios">Comentarios o solicitudes especiales</label>
+                                <textarea class="form-control" id="comentarios" name="comentarios" rows="3"
+                                    placeholder="Alergias, silla alta, acceso especial..."></textarea>
+                                <span class="help-block">Los campos con (*) son obligatorios.</span>
+                            </div>
+
+                            <button type="submit" class="btn-rincon btn-enviar">
+                                Enviar Reservación
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Panel lateral -->
+                <div class="col-md-5">
+
+                    <!-- Datos de contacto -->
+                    <div class="card-contacto">
+                        <h4>Información de Contacto</h4>
+                        <div class="dato">
+                            <span class="ico">&#128222;</span>
+                            <div>
+                                <h5>Teléfono</h5>
+                                <p>+503 2210-3456</p>
+                            </div>
+                        </div>
+                        <div class="dato">
+                            <span class="ico">&#9993;</span>
+                            <div>
+                                <h5>Correo</h5>
+                                <p>hola@caferincon.com.sv</p>
+                            </div>
+                        </div>
+                        <div class="dato">
+                            <span class="ico">&#128205;</span>
+                            <div>
+                                <h5>Dirección</h5>
+                                <p>3a Calle Poniente #18<br>Col. Escalón, San Salvador</p>
+                            </div>
+                        </div>
+                        <div class="dato">
+                            <span class="ico">&#128336;</span>
+                            <div>
+                                <h5>Atención telefónica</h5>
+                                <p>Todos los días de 9:00 am a 9:00 pm</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Horarios compactos -->
+                    <div class="card-horarios">
+                        <h5 class="card-horarios-titulo">Horarios</h5>
+                        <p>&#127769; Lun-Vie: 12:00 - 10:00 pm</p>
+                        <p>&#127769; Sábado: 11:00 am - 11:00 pm</p>
+                        <p>&#127769; Domingo: 10:00 am - 4:00 pm</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PIE -->
+    <div id="fot"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../componentes/nav.html")
+                .then(r => r.text())
+                .then(data => {
+                    document.getElementById("nav").innerHTML = data;
+                });
+        });
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            fetch("../componentes/footer.html")
+                .then(r => r.text())
+                .then(data => {
+                    document.getElementById("fot").innerHTML = data;
+                });
+        });
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
