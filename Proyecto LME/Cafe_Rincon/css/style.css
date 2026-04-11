@@ -893,4 +893,28 @@ a:hover { color: var(--dorado); text-decoration: none; }
 }
 
 
+/*CSS EXTRAIDO DE PROMOCIONES*/
+
+/* =============================================
+   ESTILOS EXTRAÍDOS DE promociones.html
+   Café Rincón
+   ============================================= */
+
+/* --- SECCIÓN: Botón pequeño para promociones --- */
+.btn-promo-sm {
+    font-size: 12px;
+    padding: 7px 18px;
+    margin-top: 8px;
+}
+
+/* --- SECCIÓN: Cards de promoción - Variantes de color --- */
+.card-promo.verde-oscuro {
+    background: #1A3A1A;
+}
+
+.card-promo.azul-oscuro {
+    background: #1A2A3A;
+}
+
+
 /*CSS RESTANTE FAVOR INDICA Y SEPARA A QUE PAGINA CORRESPONDE CSS*/
