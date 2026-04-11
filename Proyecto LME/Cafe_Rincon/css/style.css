@@ -780,4 +780,117 @@ a:hover { color: var(--dorado); text-decoration: none; }
     background: linear-gradient(135deg, #1A6A4A, #0A3A2A);
 }
 
+/*CSS EXTRAIDO DE NOSOTROS*/
+
+/* =============================================
+   ESTILOS EXTRAÍDOS DE nosotros.html
+   Café Rincón
+   ============================================= */
+
+/* --- SECCIÓN: Historia - Título con borde lateral --- */
+.titulo-borde {
+    color: var(--verde);
+    font-style: italic;
+    border-left: 4px solid var(--dorado);
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+/* --- SECCIÓN: Historia - Placeholder de imagen --- */
+.img-placeholder {
+    background: linear-gradient(160deg, #2C4A2E, #B8943A);
+    height: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+.img-placeholder span {
+    font-size: 80px;
+}
+
+/* --- SECCIÓN: Stats/Estadísticas - Contenedor --- */
+.contenedor-stats {
+    background: var(--gris);
+    border: 1px solid var(--borde);
+    padding: 18px;
+}
+
+/* --- SECCIÓN: Stats - Celdas con bordes --- */
+.stat-borde-right {
+    border-right: 1px solid var(--borde);
+    padding-bottom: 10px;
+}
+
+.stat-borde-right-top {
+    border-right: 1px solid var(--borde);
+    border-top: 1px solid var(--borde);
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.stat-borde-top {
+    border-top: 1px solid var(--borde);
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/* --- SECCIÓN: Stats - Números y etiquetas --- */
+.stat-numero {
+    font-size: 30px;
+    color: var(--dorado);
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: var(--suave);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* --- SECCIÓN: Misión y Visión - Tarjetas --- */
+.card-mvv {
+    background: #fff;
+    border: 1px solid var(--borde);
+    border-top: 4px solid var(--verde);
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.card-mvv.dorado {
+    border-top-color: var(--dorado);
+}
+
+.titulo-mvv {
+    color: var(--verde);
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.titulo-mvv.dorado {
+    color: var(--dorado);
+}
+
+/* --- SECCIÓN: Valores - Iconos y textos --- */
+.valor-icono {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.valor-titulo {
+    color: var(--verde);
+    margin-bottom: 8px;
+}
+
+.valor-texto {
+    font-size: 14px;
+    color: var(--suave);
+}
+
+
 /*CSS RESTANTE FAVOR INDICA Y SEPARA A QUE PAGINA CORRESPONDE CSS*/
