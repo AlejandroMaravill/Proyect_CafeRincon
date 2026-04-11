@@ -479,15 +479,21 @@ a:hover { color: var(--dorado); text-decoration: none; }
 
 /* --- SECCIÓN: Platos destacados --- */
 .img-slot-parrilla {
-    background: linear-gradient(135deg, #2C4A2E, #1A2E1C);
+    background-image: url('../img/lomo-asado.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-mar {
-    background: linear-gradient(135deg, #B8943A, #7A5A18);
+    background-image: url('../img/camarones-ajillo.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-postre {
-    background: linear-gradient(135deg, #5A3A18, #3A2008);
+    background-image: url('../img/tres-leches.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .btn-ver-carta {
@@ -731,53 +737,75 @@ a:hover { color: var(--dorado); text-decoration: none; }
     margin: 30px 0 20px;
 }
 
-/* --- SECCIÓN: img-slot por colores de cada plato --- */
+/* --- SECCIÓN: img-slot con imágenes reales --- */
 
 /* Entradas */
 .img-slot-ceviche {
-    background: linear-gradient(135deg, #B8943A, #7A5A18);
+    background-image: url('../img/ceviche-camaron.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-sopa {
-    background: linear-gradient(135deg, #4A6A2A, #2A4010);
+    background-image: url('../img/sopa-res.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-ensalada {
-    background: linear-gradient(135deg, #3A6A3A, #1A3A1A);
+    background-image: url('../img/ensalada-fresca.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Platos fuertes */
 .img-slot-lomo {
-    background: linear-gradient(135deg, #2C4A2E, #1A2E1C);
+    background-image: url('../img/lomo-asado.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-camarones {
-    background: linear-gradient(135deg, #1A4A6A, #0A2A3A);
+    background-image: url('../img/camarones-ajillo.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-pollo {
-    background: linear-gradient(135deg, #6A3A18, #3A1808);
+    background-image: url('../img/pollo-tamarindo.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-fettuccine {
-    background: linear-gradient(135deg, #4A3A6A, #2A1A3A);
+    background-image: url('../img/fettuccine-pesto.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-risotto {
-    background: linear-gradient(135deg, #2A6A2A, #0A3A0A);
+    background-image: url('../img/rissotto-hongos.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Postres */
 .img-slot-tresleches {
-    background: linear-gradient(135deg, #B8943A, #7A5A18);
+    background-image: url('../img/tres-leches.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-volcan {
-    background: linear-gradient(135deg, #3A1808, #1A0A05);
+    background-image: url('../img/volcan-chocolate.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-flan {
-    background: linear-gradient(135deg, #1A6A4A, #0A3A2A);
+    background-image: url('../img/flan-coco.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /*CSS EXTRAIDO DE NOSOTROS*/
