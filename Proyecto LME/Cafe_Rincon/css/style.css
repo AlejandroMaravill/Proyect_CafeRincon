@@ -389,12 +389,42 @@ a:hover { color: var(--dorado); text-decoration: none; }
     font-size: 50px;
     color: #fff;
 }
-.g-item .slot.v1 { background: var(--verde); }
-.g-item .slot.v2 { background: #3D6B40; }
-.g-item .slot.v3 { background: #1E3020; }
-.g-item .slot.d1 { background: var(--dorado); }
-.g-item .slot.d2 { background: #8A6C20; }
-.g-item .slot.d3 { background: #5A4510; }
+/* Imágenes de la galería */
+.g-item .slot.slot-lomo {
+    background-image: url('../img/lomo-asado.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-camarones {
+    background-image: url('../img/camarones-ajillo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-pollo {
+    background-image: url('../img/pollo-tamarindo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-tresleches {
+    background-image: url('../img/tres-leches.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-volcan {
+    background-image: url('../img/volcan-chocolate.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-cafe {
+    background-image: url('../img/cafe-altura.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 /* ============================================
    PIE DE PÁGINA
@@ -588,11 +618,15 @@ a:hover { color: var(--dorado); text-decoration: none; }
 }
 
 .card-instalacion-banner.verde {
-    background: var(--verde);
+    background-image: url('../img/salon-principal.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .card-instalacion-banner.dorado {
-    background: var(--dorado);
+    background-image: url('../img/terraza.png');
+    background-size: cover;
+    background-position: center;
 }
 
 /* --- SECCIÓN: Instalaciones - Título y texto --- */
@@ -937,6 +971,39 @@ a:hover { color: var(--dorado); text-decoration: none; }
 
 .card-promo.azul-oscuro {
     background: #1A2A3A;
+}
+
+/* --- SECCIÓN: Estadísticas horizontales --- */
+.estadisticas {
+    background-color: var(--gris);
+    padding: 20px 0;
+    border: 1px solid var(--borde);
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.stat-item {
+    padding: 15px;
+    border-right: 1px solid var(--borde);
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.estadistica-numero {
+    color: var(--dorado);
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.estadistica-label {
+    color: var(--verde);
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    text-transform: uppercase;
 }
 
 
