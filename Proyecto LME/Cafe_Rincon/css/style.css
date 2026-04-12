@@ -400,48 +400,38 @@ a:hover { color: #B8943A; text-decoration: none; }
     margin-bottom: 16px;
     font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
-.pie p, .pie ul li { color: #A8C0A0; line-height: 2; }
-.pie ul { list-style: none; padding: 0; margin: 0; }
-.pie ul li a { color: #A8C0A0; font-size: 14px; }
-.pie ul li a:hover { color: #B8943A; }
-.pie .linea { border-top: 1px solid #3A5A3A; margin: 28px 0 16px; }
-.pie .copy { text-align: center; color: #5A7A5A; font-size: 12px; }
-
-/* Media queries */
-
-/* Tabletas: hasta 1024px */
-@media (max-width: 1024px) {
-    .hero h1 { font-size: 38px; }
+.pie p, .pie ul li { 
+    color: #A8C0A0; 
+    line-height: 2; 
 }
 
-/* Tabletas pequeñas: hasta 768px */
-@media (max-width: 768px) {
-    .hero { padding: 55px 20px 50px; }
-    .hero h1 { font-size: 30px; }
-    .hero p { font-size: 14px; }
-    .seccion, .seccion-alt { padding: 42px 0; }
-    .titulo-s h2 { font-size: 26px; }
-    .cab-pagina h1 { font-size: 26px; }
-    .cita-bloque blockquote { font-size: 17px; padding: 0 20px; }
-    .btn-rincon-borde { margin-left: 0; margin-top: 10px; }
-    .caja-form { padding: 22px 16px; }
+.pie ul { 
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
-/* Móviles: hasta 480px */
-@media (max-width: 480px) {
-    .hero h1 { font-size: 24px; }
-    .hero .etiqueta { letter-spacing: 2px; }
-    .titulo-s h2 { font-size: 22px; }
-    .card-plato .img-slot { height: 150px; }
-    .g-item .slot { height: 160px; }
-    .pie { padding: 30px 0 14px; text-align: center; }
-    .dato { flex-direction: column; }
-    .card-promo .p-nuevo { font-size: 22px; }
+.pie ul li a { 
+    color: #A8C0A0; 
+    font-size: 14px; 
 }
 
+.pie ul li a:hover {
+    color: #B8943A; 
+}
+
+.pie .linea {
+    border-top: 1px solid #3A5A3A; 
+    margin: 28px 0 16px; 
+}
+
+.pie .copy { text-align: center;
+    color: #5A7A5A; 
+    font-size: 12px; 
+    }
 
 
-/*CSS INDEX EXTRAIDO*/
+
 /* Estilos del index */
 
 /* Por que elegirnos */
@@ -537,7 +527,6 @@ a:hover { color: #B8943A; text-decoration: none; }
 
 
 
-/*CSS EXTRAIDO DE GALERIA*/
 /* Estilos de galeria */
 
 /* Pie de imagen galeria */
@@ -590,35 +579,7 @@ a:hover { color: #B8943A; text-decoration: none; }
     color: #6A6055;
 }
 
-/* Mapa ubicacion */
-.mapa-ubicacion {
-    background: #F0EDE6;
-    border: 1px dashed #DDD5C5;
-    height: 260px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: #6A6055;
-}
 
-.mapa-ubicacion-icono {
-    font-size: 40px;
-    margin: 0 0 8px;
-}
-
-.mapa-ubicacion-titulo {
-    font-size: 16px;
-    color: #2A2A2A;
-}
-
-.mapa-ubicacion-nota {
-    font-size: 12px;
-    color: #B0A090;
-}
-
-
-/*CSS DE CONTACTOS*/
 
 /* Estilos de contacto */
 
@@ -683,7 +644,6 @@ a:hover { color: #B8943A; text-decoration: none; }
     margin-bottom: 0;
 }
 
-/*CSS EXTRAIDO DE MENU*/
 
 /* Estilos del menu */
 
@@ -784,8 +744,6 @@ a:hover { color: #B8943A; text-decoration: none; }
     background-size: cover;
     background-position: center;
 }
-
-/*CSS EXTRAIDO DE NOSOTROS*/
 
 /* Estilos de nosotros */
 
@@ -888,9 +846,6 @@ a:hover { color: #B8943A; text-decoration: none; }
     font-size: 14px;
     color: #6A6055;
 }
-
-
-/*CSS EXTRAIDO DE PROMOCIONES*/
 
 /* Estilos de promociones */
 
@@ -1024,6 +979,38 @@ a:hover { color: #B8943A; text-decoration: none; }
 .ico .bx {
     font-size: 22px;
     color: #B8943A;
+}
+
+/* Media queries */
+
+/* Tabletas: hasta 1024px */
+@media (max-width: 1024px) {
+    .hero h1 { font-size: 38px; }
+}
+
+/* Tabletas pequeñas: hasta 768px */
+@media (max-width: 768px) {
+    .hero { padding: 55px 20px 50px; }
+    .hero h1 { font-size: 30px; }
+    .hero p { font-size: 14px; }
+    .seccion, .seccion-alt { padding: 42px 0; }
+    .titulo-s h2 { font-size: 26px; }
+    .cab-pagina h1 { font-size: 26px; }
+    .cita-bloque blockquote { font-size: 17px; padding: 0 20px; }
+    .btn-rincon-borde { margin-left: 0; margin-top: 10px; }
+    .caja-form { padding: 22px 16px; }
+}
+
+/* Móviles: hasta 480px */
+@media (max-width: 480px) {
+    .hero h1 { font-size: 24px; }
+    .hero .etiqueta { letter-spacing: 2px; }
+    .titulo-s h2 { font-size: 22px; }
+    .card-plato .img-slot { height: 150px; }
+    .g-item .slot { height: 160px; }
+    .pie { padding: 30px 0 14px; text-align: center; }
+    .dato { flex-direction: column; }
+    .card-promo .p-nuevo { font-size: 22px; }
 }
 
 /* Fin de estilos */
