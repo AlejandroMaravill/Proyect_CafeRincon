@@ -978,5 +978,52 @@ a:hover { color: #B8943A; text-decoration: none; }
     }
 }
 
+/* Iconos Boxicons */
+.bx {
+    font-size: inherit;
+    vertical-align: middle;
+}
+
+.icono-razon .bx {
+    font-size: 36px;
+    color: #2C4A2E;
+}
+
+.valor-icono .bx {
+    font-size: 34px;
+    color: #2C4A2E;
+    margin-bottom: 8px;
+}
+
+.titulo-mvv .bx {
+    font-size: 20px;
+    color: inherit;
+}
+
+.titulo-categoria .bx {
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+.redes-sociales .bx {
+    font-size: 24px;
+    color: #A8C0A0;
+    transition: color 0.3s;
+}
+
+.redes-sociales .bx:hover {
+    color: #B8943A;
+}
+
+.mapa-icono .bx,
+.mapa-ubicacion-icono .bx {
+    font-size: 32px;
+    color: #6A6055;
+}
+
+.ico .bx {
+    font-size: 22px;
+    color: #B8943A;
+}
 
 /* Fin de estilos */
