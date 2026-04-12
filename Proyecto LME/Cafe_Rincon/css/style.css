@@ -1,48 +1,29 @@
-/* ============================================
-   CAFÉ RINCÓN — Hoja de Estilos
-   Lenguaje de Marcado, Diseño Web y Gestores de Contenido
-   Universidad Don Bosco
-   ============================================ */
-
-/* --- Variables --- */
-:root {
-    --verde:    #2C4A2E;
-    --dorado:   #B8943A;
-    --fondo:    #F9F6F0;
-    --gris:     #F0EDE6;
-    --texto:    #2A2A2A;
-    --suave:    #6A6055;
-    --borde:    #DDD5C5;
-    --fuente-t: Georgia, 'Times New Roman', serif;
-    --fuente-c: 'Trebuchet MS', Verdana, sans-serif;
-}
+/* Estilos para Cafe Rincon */
 
 * { box-sizing: border-box; }
 
 body {
-    background-color: var(--fondo);
-    color: var(--texto);
-    font-family: var(--fuente-c);
+    background-color: #F9F6F0;
+    color: #2A2A2A;
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
     font-size: 15px;
     line-height: 1.7;
 }
 
-h1, h2, h3, h4 { font-family: var(--fuente-t); }
+h1, h2, h3, h4 { font-family: Georgia, 'Times New Roman', serif; }
 
-a { color: var(--verde); text-decoration: none; }
-a:hover { color: var(--dorado); text-decoration: none; }
+a { color: #2C4A2E; text-decoration: none; }
+a:hover { color: #B8943A; text-decoration: none; }
 
-/* ============================================
-   NAVEGACIÓN
-   ============================================ */
+/* Navegacion */
 .navbar-rincon {
-    background-color: var(--verde);
-    border-bottom: 3px solid var(--dorado);
+    background-color: #2C4A2E;
+    border-bottom: 3px solid #B8943A;
     padding: 0;
 }
 .navbar-rincon .navbar-brand {
-    color: var(--dorado);
-    font-family: var(--fuente-t);
+    color: #B8943A;
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 22px;
     font-style: italic;
     padding: 14px 15px;
@@ -58,17 +39,15 @@ a:hover { color: var(--dorado); text-decoration: none; }
 }
 .navbar-rincon .nav-link:hover,
 .navbar-rincon .nav-link.activo {
-    color: var(--dorado) !important;
+    color: #B8943A !important;
 }
 .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28184,148,58,1%29' stroke-linecap='round' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
 }
 
-/* ============================================
-   HERO
-   ============================================ */
+/* Hero */
 .hero {
-    background-color: var(--verde);
+    background-color: #2C4A2E;
     background-image: repeating-linear-gradient(
         -45deg,
         transparent,
@@ -80,7 +59,7 @@ a:hover { color: var(--dorado); text-decoration: none; }
     text-align: center;
 }
 .hero .etiqueta {
-    color: var(--dorado);
+    color: #B8943A;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -99,25 +78,23 @@ a:hover { color: var(--dorado); text-decoration: none; }
     margin: 0 auto 28px;
 }
 
-/* ============================================
-   BOTONES
-   ============================================ */
+/* Botones */
 .btn-rincon {
-    background-color: var(--dorado);
-    color: var(--verde);
-    border: 2px solid var(--dorado);
+    background-color: #B8943A;
+    color: #2C4A2E;
+    border: 2px solid #B8943A;
     padding: 10px 28px;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1px;
     border-radius: 0;
     display: inline-block;
-    font-family: var(--fuente-c);
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
     font-weight: bold;
 }
 .btn-rincon:hover {
     background-color: transparent;
-    color: var(--dorado);
+    color: #B8943A;
 }
 .btn-rincon-borde {
     background-color: transparent;
@@ -129,19 +106,17 @@ a:hover { color: var(--dorado); text-decoration: none; }
     letter-spacing: 1px;
     border-radius: 0;
     display: inline-block;
-    font-family: var(--fuente-c);
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
     margin-left: 8px;
 }
 .btn-rincon-borde:hover {
     background-color: #fff;
-    color: var(--verde);
+    color: #2C4A2E;
 }
 
-/* ============================================
-   SECCIONES
-   ============================================ */
+/* Secciones */
 .seccion     { padding: 60px 0; }
-.seccion-alt { padding: 60px 0; background-color: var(--gris); }
+.seccion-alt { padding: 60px 0; background-color: #F0EDE6; }
 
 .titulo-s {
     text-align: center;
@@ -149,29 +124,27 @@ a:hover { color: var(--dorado); text-decoration: none; }
 }
 .titulo-s h2 {
     font-size: 32px;
-    color: var(--verde);
+    color: #2C4A2E;
     font-style: italic;
     margin-bottom: 8px;
 }
 .titulo-s .raya {
     width: 50px;
     height: 3px;
-    background: var(--dorado);
+    background: #B8943A;
     margin: 0 auto 12px;
 }
 .titulo-s p {
-    color: var(--suave);
+    color: #6A6055;
     font-size: 14px;
     max-width: 480px;
     margin: 0 auto;
 }
 
-/* ============================================
-   CARDS DE PLATILLOS
-   ============================================ */
+/* Cards de platillos */
 .card-plato {
     background: #fff;
-    border: 1px solid var(--borde);
+    border: 1px solid #DDD5C5;
     margin-bottom: 24px;
 }
 .card-plato .img-slot {
@@ -186,8 +159,8 @@ a:hover { color: var(--dorado); text-decoration: none; }
     padding: 16px 18px;
 }
 .card-plato .etiqueta-cat {
-    background: var(--dorado);
-    color: var(--verde);
+    background: #B8943A;
+    color: #2C4A2E;
     font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -199,28 +172,26 @@ a:hover { color: var(--dorado); text-decoration: none; }
 .card-plato h4 {
     font-size: 16px;
     margin-bottom: 5px;
-    color: var(--texto);
+    color: #2A2A2A;
 }
 .card-plato p {
     font-size: 13px;
-    color: var(--suave);
+    color: #6A6055;
     margin-bottom: 10px;
 }
 .card-plato .precio {
     font-size: 18px;
-    font-family: var(--fuente-t);
-    color: var(--verde);
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #2C4A2E;
     font-weight: bold;
 }
 
-/* ============================================
-   CABECERA DE PÁGINA INTERNA
-   ============================================ */
+/* Cabecera de pagina interna */
 .cab-pagina {
-    background: var(--verde);
+    background: #2C4A2E;
     padding: 38px 0;
     text-align: center;
-    border-bottom: 3px solid var(--dorado);
+    border-bottom: 3px solid #B8943A;
 }
 .cab-pagina h1 {
     color: #fff;
@@ -232,61 +203,55 @@ a:hover { color: var(--dorado); text-decoration: none; }
     color: #A8C8A0;
     font-size: 13px;
 }
-.cab-pagina .ruta a { color: var(--dorado); }
+.cab-pagina .ruta a { color: #B8943A; }
 
-/* ============================================
-   TABLA
-   ============================================ */
+/* Tablas */
 .tabla-simple th {
-    background-color: var(--verde);
+    background-color: #2C4A2E;
     color: #fff;
     padding: 10px 14px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 12px;
-    font-family: var(--fuente-c);
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 .tabla-simple td {
     padding: 10px 14px;
-    border-bottom: 1px solid var(--borde);
+    border-bottom: 1px solid #DDD5C5;
     font-size: 14px;
 }
-.tabla-simple tr:nth-child(even) td { background: var(--gris); }
+.tabla-simple tr:nth-child(even) td { background: #F0EDE6; }
 
-/* ============================================
-   FORMULARIO
-   ============================================ */
+/* Formularios */
 .caja-form {
     background: #fff;
-    border: 1px solid var(--borde);
+    border: 1px solid #DDD5C5;
     padding: 32px 28px;
 }
 .caja-form label {
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--texto);
+    color: #2A2A2A;
     font-weight: bold;
     margin-bottom: 4px;
     display: block;
 }
 .caja-form .form-control {
     border-radius: 0;
-    border: 1px solid var(--borde);
-    background-color: var(--fondo);
+    border: 1px solid #DDD5C5;
+    background-color: #F9F6F0;
     font-size: 14px;
     padding: 9px 12px;
-    color: var(--texto);
+    color: #2A2A2A;
 }
 .caja-form .form-control:focus {
-    border-color: var(--dorado);
+    border-color: #B8943A;
     box-shadow: 0 0 0 2px rgba(184,148,58,0.2);
     outline: none;
 }
 
-/* ============================================
-   DATO DE CONTACTO
-   ============================================ */
+/* Datos de contacto */
 .dato {
     display: flex;
     gap: 14px;
@@ -295,7 +260,7 @@ a:hover { color: var(--dorado); text-decoration: none; }
 }
 .dato .ico {
     font-size: 22px;
-    color: var(--dorado);
+    color: #B8943A;
     flex-shrink: 0;
     margin-top: 2px;
 }
@@ -303,24 +268,22 @@ a:hover { color: var(--dorado); text-decoration: none; }
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--verde);
+    color: #2C4A2E;
     margin-bottom: 2px;
 }
-.dato p { font-size: 14px; margin: 0; color: var(--suave); }
+.dato p { font-size: 14px; margin: 0; color: #6A6055; }
 
-/* ============================================
-   CITA OSCURA
-   ============================================ */
+/* Cita */
 .cita-bloque {
-    background: var(--verde);
+    background: #2C4A2E;
     padding: 50px 0;
     text-align: center;
 }
 .cita-bloque blockquote {
-    font-family: var(--fuente-t);
+    font-family: Georgia, 'Times New Roman', serif;
     font-size: 20px;
     font-style: italic;
-    color: var(--dorado);
+    color: #B8943A;
     max-width: 600px;
     margin: 0 auto 8px;
     line-height: 1.6;
@@ -332,18 +295,16 @@ a:hover { color: var(--dorado); text-decoration: none; }
     letter-spacing: 2px;
 }
 
-/* ============================================
-   PROMOCIÓN
-   ============================================ */
+/* Promociones */
 .card-promo {
-    background: var(--verde);
+    background: #2C4A2E;
     color: #fff;
     padding: 26px 22px;
     margin-bottom: 24px;
-    border-bottom: 4px solid var(--dorado);
+    border-bottom: 4px solid #B8943A;
 }
 .card-promo h3 {
-    color: var(--dorado);
+    color: #B8943A;
     font-size: 20px;
     font-style: italic;
     margin-bottom: 8px;
@@ -360,8 +321,8 @@ a:hover { color: var(--dorado); text-decoration: none; }
 }
 .card-promo .p-nuevo {
     font-size: 26px;
-    font-family: var(--fuente-t);
-    color: var(--dorado);
+    font-family: Georgia, 'Times New Roman', serif;
+    color: #B8943A;
     font-weight: bold;
 }
 .card-promo .vigencia {
@@ -371,9 +332,7 @@ a:hover { color: var(--dorado); text-decoration: none; }
     margin-top: 8px;
 }
 
-/* ============================================
-   GALERÍA
-   ============================================ */
+/* Galeria */
 .g-item {
     margin-bottom: 20px;
     border: 3px solid #fff;
@@ -389,40 +348,66 @@ a:hover { color: var(--dorado); text-decoration: none; }
     font-size: 50px;
     color: #fff;
 }
-.g-item .slot.v1 { background: var(--verde); }
-.g-item .slot.v2 { background: #3D6B40; }
-.g-item .slot.v3 { background: #1E3020; }
-.g-item .slot.d1 { background: var(--dorado); }
-.g-item .slot.d2 { background: #8A6C20; }
-.g-item .slot.d3 { background: #5A4510; }
+/* Imágenes de la galería */
+.g-item .slot.slot-lomo {
+    background-image: url('../img/lomo-asado.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
-/* ============================================
-   PIE DE PÁGINA
-   ============================================ */
+.g-item .slot.slot-camarones {
+    background-image: url('../img/camarones-ajillo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-pollo {
+    background-image: url('../img/pollo-tamarindo.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-tresleches {
+    background-image: url('../img/tres-leches.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-volcan {
+    background-image: url('../img/volcan-chocolate.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-cafe {
+    background-image: url('../img/cafe-altura.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Pie de pagina */
 .pie {
-    background: var(--verde);
+    background: #2C4A2E;
     padding: 45px 0 18px;
     color: #A8C0A0;
     font-size: 14px;
 }
 .pie h5 {
-    color: var(--dorado);
+    color: #B8943A;
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 2px;
     margin-bottom: 16px;
-    font-family: var(--fuente-c);
+    font-family: 'Trebuchet MS', Verdana, sans-serif;
 }
 .pie p, .pie ul li { color: #A8C0A0; line-height: 2; }
 .pie ul { list-style: none; padding: 0; margin: 0; }
 .pie ul li a { color: #A8C0A0; font-size: 14px; }
-.pie ul li a:hover { color: var(--dorado); }
+.pie ul li a:hover { color: #B8943A; }
 .pie .linea { border-top: 1px solid #3A5A3A; margin: 28px 0 16px; }
 .pie .copy { text-align: center; color: #5A7A5A; font-size: 12px; }
 
-/* ============================================
-   MEDIA QUERIES
-   ============================================ */
+/* Media queries */
 
 /* Tabletas: hasta 1024px */
 @media (max-width: 1024px) {
@@ -457,61 +442,64 @@ a:hover { color: var(--dorado); text-decoration: none; }
 
 
 /*CSS INDEX EXTRAIDO*/
-/* =============================================
-   ESTILOS EXTRAÍDOS DE index.html
-   Café Rincón
-   ============================================= */
+/* Estilos del index */
 
-/* --- SECCIÓN: ¿Por qué elegirnos? --- */
+/* Por que elegirnos */
 .icono-razon {
     font-size: 36px;
     margin-bottom: 8px;
 }
 
 .titulo-razon {
-    color: var(--verde);
+    color: #2C4A2E;
 }
 
 .texto-razon {
     font-size: 14px;
-    color: var(--suave);
+    color: #6A6055;
 }
 
-/* --- SECCIÓN: Platos destacados --- */
+/* Platos destacados */
 .img-slot-parrilla {
-    background: linear-gradient(135deg, #2C4A2E, #1A2E1C);
+    background-image: url('../img/lomo-asado.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-mar {
-    background: linear-gradient(135deg, #B8943A, #7A5A18);
+    background-image: url('../img/camarones-ajillo.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-postre {
-    background: linear-gradient(135deg, #5A3A18, #3A2008);
+    background-image: url('../img/tres-leches.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .btn-ver-carta {
     margin-top: 10px;
 }
 
-/* --- SECCIÓN: Horarios y Encuéntranos --- */
+/* Horarios y ubicacion */
 .titulo-seccion-lateral {
     font-style: italic;
-    color: var(--verde);
-    border-left: 4px solid var(--dorado);
+    color: #2C4A2E;
+    border-left: 4px solid #B8943A;
     padding-left: 12px;
     margin-bottom: 20px;
 }
 
 .mapa-placeholder {
-    background: var(--fondo);
-    border: 1px dashed var(--borde);
+    background: #F9F6F0;
+    border: 1px dashed #DDD5C5;
     height: 160px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--suave);
+    color: #6A6055;
 }
 
 .mapa-icono {
@@ -523,54 +511,51 @@ a:hover { color: var(--dorado); text-decoration: none; }
     margin: 5px 0 0;
 }
 
-/* --- SECCIÓN: CTA Reservación --- */
+/* CTA Reservacion */
 .seccion-cta {
-    background: var(--dorado);
+    background: #B8943A;
     padding: 45px 0;
     text-align: center;
 }
 
 .cta-titulo {
-    color: var(--verde);
+    color: #2C4A2E;
     font-style: italic;
     margin-bottom: 8px;
 }
 
 .cta-subtitulo {
-    color: var(--verde);
+    color: #2C4A2E;
     font-size: 15px;
     margin-bottom: 22px;
     opacity: 0.85;
 }
 
 .cta-btn {
-    border-color: var(--verde);
+    border-color: #2C4A2E;
 }
 
 
 
 /*CSS EXTRAIDO DE GALERIA*/
-/* =============================================
-   ESTILOS EXTRAÍDOS DE galeria.html
-   Café Rincón
-   ============================================= */
+/* Estilos de galeria */
 
-/* --- SECCIÓN: Galería - Pie de cada imagen --- */
+/* Pie de imagen galeria */
 .galeria-label {
     font-size: 13px;
-    color: var(--suave);
+    color: #6A6055;
     margin-top: 6px;
 }
 
-/* --- SECCIÓN: Instalaciones - Tarjeta contenedora --- */
+/* Tarjetas instalaciones */
 .card-instalacion {
     background: #fff;
-    border: 1px solid var(--borde);
+    border: 1px solid #DDD5C5;
     padding: 22px;
     margin-bottom: 20px;
 }
 
-/* --- SECCIÓN: Instalaciones - Banner superior de la tarjeta --- */
+/* Banner instalaciones */
 .card-instalacion-banner {
     height: 150px;
     display: flex;
@@ -582,35 +567,39 @@ a:hover { color: var(--dorado); text-decoration: none; }
 }
 
 .card-instalacion-banner.verde {
-    background: var(--verde);
+    background-image: url('../img/salon-principal.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .card-instalacion-banner.dorado {
-    background: var(--dorado);
+    background-image: url('../img/terraza.png');
+    background-size: cover;
+    background-position: center;
 }
 
-/* --- SECCIÓN: Instalaciones - Título y texto --- */
+/* Titulos instalaciones */
 .card-instalacion h4 {
-    color: var(--verde);
+    color: #2C4A2E;
     font-style: italic;
     margin-bottom: 8px;
 }
 
 .card-instalacion p {
     font-size: 14px;
-    color: var(--suave);
+    color: #6A6055;
 }
 
-/* --- SECCIÓN: Ubicación - Mapa placeholder --- */
+/* Mapa ubicacion */
 .mapa-ubicacion {
-    background: var(--gris);
-    border: 1px dashed var(--borde);
+    background: #F0EDE6;
+    border: 1px dashed #DDD5C5;
     height: 260px;
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: var(--suave);
+    color: #6A6055;
 }
 
 .mapa-ubicacion-icono {
@@ -620,7 +609,7 @@ a:hover { color: var(--dorado); text-decoration: none; }
 
 .mapa-ubicacion-titulo {
     font-size: 16px;
-    color: var(--texto);
+    color: #2A2A2A;
 }
 
 .mapa-ubicacion-nota {
@@ -631,55 +620,52 @@ a:hover { color: var(--dorado); text-decoration: none; }
 
 /*CSS DE CONTACTOS*/
 
-/* =============================================
-   ESTILOS EXTRAÍDOS DE contacto.html
-   Café Rincón
-   ============================================= */
+/* Estilos de contacto */
 
-/* --- SECCIÓN: Formulario - Título y subtítulo --- */
+/* Formulario titulos */
 .form-titulo {
-    color: var(--verde);
+    color: #2C4A2E;
     font-style: italic;
     margin-bottom: 5px;
 }
 
 .form-subtitulo {
     font-size: 14px;
-    color: var(--suave);
+    color: #6A6055;
     margin-bottom: 22px;
 }
 
-/* --- SECCIÓN: Formulario - Botón enviar --- */
+/* Boton enviar */
 .btn-enviar {
     width: 100%;
     padding: 13px;
     font-size: 14px;
 }
 
-/* --- SECCIÓN: Panel lateral - Tarjeta de contacto --- */
+/* Tarjeta contacto */
 .card-contacto {
     background: #fff;
-    border: 1px solid var(--borde);
+    border: 1px solid #DDD5C5;
     padding: 22px;
     margin-bottom: 20px;
 }
 
 .card-contacto h4 {
-    color: var(--verde);
+    color: #2C4A2E;
     font-style: italic;
-    border-left: 4px solid var(--dorado);
+    border-left: 4px solid #B8943A;
     padding-left: 10px;
     margin-bottom: 18px;
 }
 
-/* --- SECCIÓN: Panel lateral - Bloque de horarios --- */
+/* Bloque horarios */
 .card-horarios {
-    background: var(--verde);
+    background: #2C4A2E;
     padding: 22px;
 }
 
 .card-horarios-titulo {
-    color: var(--dorado);
+    color: #B8943A;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -699,30 +685,27 @@ a:hover { color: var(--dorado); text-decoration: none; }
 
 /*CSS EXTRAIDO DE MENU*/
 
-/* =============================================
-   ESTILOS EXTRAÍDOS DE menu.html
-   Café Rincón
-   ============================================= */
+/* Estilos del menu */
 
-/* --- SECCIÓN: Aviso superior --- */
+/* Aviso superior */
 .aviso-menu {
-    background: var(--gris);
+    background: #F0EDE6;
     padding: 16px 0;
-    border-bottom: 1px solid var(--borde);
+    border-bottom: 1px solid #DDD5C5;
     text-align: center;
 }
 
 .aviso-menu p {
     font-size: 14px;
-    color: var(--suave);
+    color: #6A6055;
     margin: 0;
 }
 
-/* --- SECCIÓN: Títulos de categoría (Entradas, Platos Fuertes, Bebidas, Postres) --- */
+/* Titulos de categoria */
 .titulo-categoria {
-    color: var(--verde);
+    color: #2C4A2E;
     font-style: italic;
-    border-left: 4px solid var(--dorado);
+    border-left: 4px solid #B8943A;
     padding-left: 12px;
     margin: 0 0 20px;
 }
@@ -731,53 +714,269 @@ a:hover { color: var(--dorado); text-decoration: none; }
     margin: 30px 0 20px;
 }
 
-/* --- SECCIÓN: img-slot por colores de cada plato --- */
+/* Imagenes de platillos */
 
 /* Entradas */
 .img-slot-ceviche {
-    background: linear-gradient(135deg, #B8943A, #7A5A18);
+    background-image: url('../img/ceviche-camaron.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-sopa {
-    background: linear-gradient(135deg, #4A6A2A, #2A4010);
+    background-image: url('../img/sopa-res.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-ensalada {
-    background: linear-gradient(135deg, #3A6A3A, #1A3A1A);
+    background-image: url('../img/ensalada-fresca.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Platos fuertes */
 .img-slot-lomo {
-    background: linear-gradient(135deg, #2C4A2E, #1A2E1C);
+    background-image: url('../img/lomo-asado.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-camarones {
-    background: linear-gradient(135deg, #1A4A6A, #0A2A3A);
+    background-image: url('../img/camarones-ajillo.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-pollo {
-    background: linear-gradient(135deg, #6A3A18, #3A1808);
+    background-image: url('../img/pollo-tamarindo.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-fettuccine {
-    background: linear-gradient(135deg, #4A3A6A, #2A1A3A);
+    background-image: url('../img/fettuccine-pesto.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-risotto {
-    background: linear-gradient(135deg, #2A6A2A, #0A3A0A);
+    background-image: url('../img/rissotto-hongos.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 /* Postres */
 .img-slot-tresleches {
-    background: linear-gradient(135deg, #B8943A, #7A5A18);
+    background-image: url('../img/tres-leches.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-volcan {
-    background: linear-gradient(135deg, #3A1808, #1A0A05);
+    background-image: url('../img/volcan-chocolate.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
 .img-slot-flan {
-    background: linear-gradient(135deg, #1A6A4A, #0A3A2A);
+    background-image: url('../img/flan-coco.jpg');
+    background-size: cover;
+    background-position: center;
 }
 
-/*CSS RESTANTE FAVOR INDICA Y SEPARA A QUE PAGINA CORRESPONDE CSS*/
+/*CSS EXTRAIDO DE NOSOTROS*/
+
+/* Estilos de nosotros */
+
+/* Titulo historia */
+.titulo-borde {
+    color: #2C4A2E;
+    font-style: italic;
+    border-left: 4px solid #B8943A;
+    padding-left: 12px;
+    margin-bottom: 16px;
+}
+
+/* Imagen fundadores */
+.img-placeholder {
+    background-image: url('../img/nuestra-historia.png');
+    background-size: cover;
+    background-position: center;
+    height: 280px;
+    margin-bottom: 18px;
+}
+
+/* Contenedor stats */
+.contenedor-stats {
+    background: #F0EDE6;
+    border: 1px solid #DDD5C5;
+    padding: 18px;
+}
+
+/* Stats bordes */
+.stat-borde-right {
+    border-right: 1px solid #DDD5C5;
+    padding-bottom: 10px;
+}
+
+.stat-borde-right-top {
+    border-right: 1px solid #DDD5C5;
+    border-top: 1px solid #DDD5C5;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+.stat-borde-top {
+    border-top: 1px solid #DDD5C5;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+/* Stats numeros */
+.stat-numero {
+    font-size: 30px;
+    color: #B8943A;
+    font-family: Georgia, serif;
+    font-weight: bold;
+    margin: 0;
+}
+
+.stat-label {
+    font-size: 12px;
+    color: #6A6055;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+/* Tarjetas mision vision */
+.card-mvv {
+    background: #fff;
+    border: 1px solid #DDD5C5;
+    border-top: 4px solid #2C4A2E;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.card-mvv.dorado {
+    border-top-color: #B8943A;
+}
+
+.titulo-mvv {
+    color: #2C4A2E;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.titulo-mvv.dorado {
+    color: #B8943A;
+}
+
+/* Valores */
+.valor-icono {
+    font-size: 34px;
+    margin-bottom: 8px;
+}
+
+.valor-titulo {
+    color: #2C4A2E;
+    margin-bottom: 8px;
+}
+
+.valor-texto {
+    font-size: 14px;
+    color: #6A6055;
+}
+
+
+/*CSS EXTRAIDO DE PROMOCIONES*/
+
+/* Estilos de promociones */
+
+/* Boton promociones */
+.btn-promo-sm {
+    font-size: 12px;
+    padding: 7px 18px;
+    margin-top: 8px;
+}
+
+/* Cards promociones */
+.card-promo.verde-oscuro {
+    background: #1A3A1A;
+}
+
+.card-promo.azul-oscuro {
+    background: #1A2A3A;
+}
+
+/* Estadisticas */
+.estadisticas {
+    background-color: #F0EDE6;
+    padding: 20px 0;
+    border: 1px solid #DDD5C5;
+    border-radius: 6px;
+    margin-top: 15px;
+}
+
+.stat-item {
+    padding: 15px;
+    border-right: 1px solid #DDD5C5;
+}
+
+.stat-item:last-child {
+    border-right: none;
+}
+
+.estadistica-numero {
+    color: #B8943A;
+    font-size: 32px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.estadistica-label {
+    color: #2C4A2E;
+    font-size: 11px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+    text-transform: uppercase;
+}
+
+/* Redes sociales */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.redes-sociales {
+    display: flex;
+    gap: 20px;
+}
+
+.redes-sociales img {
+    opacity: 0.7;
+    transition: opacity 0.3s ease;
+}
+
+.redes-sociales img:hover {
+    opacity: 1;
+}
+
+/* Responsive: en móvil se apilan */
+@media (max-width: 768px) {
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .redes-sociales {
+        justify-content: center;
+    }
+}
+
+
+/* Fin de estilos */
