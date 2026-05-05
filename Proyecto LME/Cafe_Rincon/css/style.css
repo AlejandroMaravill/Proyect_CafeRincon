@@ -523,6 +523,12 @@ a:hover { color: #B8943A; text-decoration: none; }
     border-color: #2C4A2E;
 }
 
+.seccion-cta .btn-rincon:hover {
+    background-color: #2C4A2E;
+    color: #fff;
+    border-color: #2C4A2E;
+}
+
 
 
 /* Estilos de galeria */
@@ -1009,6 +1015,149 @@ a:hover { color: #B8943A; text-decoration: none; }
     .pie { padding: 30px 0 14px; text-align: center; }
     .dato { flex-direction: column; }
     .card-promo .p-nuevo { font-size: 22px; }
+}
+
+/* --- Seccion Promociones / Platos del Dia --- */
+.seccion-promos { padding-bottom: 50px; }
+
+.card-promo {
+    background: #fff;
+    border: 1px solid #DDD5C5;
+    overflow: hidden;
+}
+
+.img-promo {
+    width: 100%;
+    min-height: 350px;
+    background-color: #E6EBE4;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Imagenes reales en img/promos/ */
+.img-promo-1 { background-image: url('../img/promos/desayuno-rincon.png'); }
+.img-promo-2 { background-image: url('../img/promos/pasta-dia.png'); }
+.img-promo-3 { background-image: url('../img/promos/filete-pescado.png'); }
+
+.info-promo {
+    padding: 40px 30px;
+}
+
+.info-promo .etiqueta-promo {
+    background: #2C4A2E;
+    color: #B8943A;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 3px 10px;
+    display: inline-block;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.info-promo h3 {
+    font-family: Georgia, 'Times New Roman', serif;
+    font-size: 28px;
+    color: #2C4A2E;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+
+.info-promo p {
+    font-size: 15px;
+    color: #6A6055;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.precios { margin-bottom: 24px; }
+
+.precio-original {
+    font-size: 18px;
+    color: #9E9E9E;
+    text-decoration: line-through;
+    margin-right: 12px;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+.precio-promo {
+    font-size: 28px;
+    color: #B8943A;
+    font-family: Georgia, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+/* Carousel Custom Styles */
+#carousel-promos {
+    position: relative;
+    padding: 0 25px;
+}
+
+#carousel-promos .carousel-indicators {
+    bottom: -40px;
+}
+
+#carousel-promos .carousel-indicators li {
+    border: 1px solid #B8943A;
+    background-color: transparent;
+    width: 12px;
+    height: 12px;
+    margin: 0 4px;
+}
+
+#carousel-promos .carousel-indicators li.active {
+    background-color: #B8943A;
+    border-color: #B8943A;
+}
+
+/* Carousel controls - override Bootstrap 3 defaults */
+#carousel-promos .carousel-control.left,
+#carousel-promos .carousel-control.right {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    top: 50%;
+    bottom: auto;
+    transform: translateY(-50%);
+    background: #2C4A2E !important;
+    border: 2px solid #B8943A !important;
+    border-radius: 50%;
+    opacity: 1;
+    text-shadow: none;
+    color: #B8943A !important;
+    background-image: none !important;
+    filter: none !important;
+}
+
+#carousel-promos .carousel-control.left .glyphicon,
+#carousel-promos .carousel-control.right .glyphicon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+#carousel-promos .carousel-control.left:hover,
+#carousel-promos .carousel-control.right:hover {
+    background: #B8943A !important;
+    color: #2C4A2E !important;
+    border-color: #B8943A !important;
+}
+
+#carousel-promos .carousel-control.left  { left: -25px; }
+#carousel-promos .carousel-control.right { right: -25px; }
+
+@media (max-width: 768px) {
+    .info-promo { padding: 25px 20px; text-align: center; }
+    .img-promo { min-height: 220px; }
+    #carousel-promos .carousel-control.left  { left: 5px; }
+    #carousel-promos .carousel-control.right { right: 5px; }
+    .precio-original, .precio-promo { display: block; margin: 5px 0; }
 }
 
 /* Fin de estilos */
