@@ -557,6 +557,7 @@ a:hover { color: #B8943A; text-decoration: none; }
     font-size: 54px;
     color: #fff;
     margin-bottom: 16px;
+    background-color: #E6EBE4;
 }
 
 .card-instalacion-banner.verde {
@@ -1127,19 +1128,16 @@ a:hover { color: #B8943A; text-decoration: none; }
     color: #B8943A !important;
     background-image: none !important;
     filter: none !important;
+    /* Centrado con Flexbox */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
 }
 
-#carousel-promos .carousel-control.left .glyphicon,
-#carousel-promos .carousel-control.right .glyphicon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0;
-    padding: 0;
-    font-size: 18px;
-    text-align: center;
-    vertical-align: middle;
+#carousel-promos .carousel-control.left .bx,
+#carousel-promos .carousel-control.right .bx {
+    font-size: 24px;
+    line-height: 1;
 }
 
 #carousel-promos .carousel-control.left:hover,
@@ -1158,6 +1156,77 @@ a:hover { color: #B8943A; text-decoration: none; }
     #carousel-promos .carousel-control.left  { left: 5px; }
     #carousel-promos .carousel-control.right { right: 5px; }
     .precio-original, .precio-promo { display: block; margin: 5px 0; }
+}
+
+/* Imagenes de historia - primeros años */
+.g-item .slot,
+.card-instalacion-banner {
+    background-color: #E6EBE4;
+}
+
+.g-item .slot.slot-historia-1,
+.card-instalacion-banner.slot-historia-1 {
+    background-image: url('../img/historia/primera-sucursal.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-historia-2,
+.card-instalacion-banner.slot-historia-2 {
+    background-image: url('../img/historia/fundadores.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.g-item .slot.slot-historia-3,
+.card-instalacion-banner.slot-historia-3 {
+    background-image: url('../img/historia/primera-cocina.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Imagenes de instalaciones actuales */
+.card-instalacion-banner.salon-hoy {
+    background-image: url('../img/instalaciones/salon-principal.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-instalacion-banner.terraza-hoy {
+    background-image: url('../img/instalaciones/terraza.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-instalacion-banner.cocina-hoy {
+    background-image: url('../img/instalaciones/cocina.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Primera sucursal destacada */
+.img-historia-destacada {
+    width: 100%;
+    min-height: 350px;
+    background-color: #E6EBE4;
+    background-image: url('../img/historia/sucursal-centro.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Lightbox estilos */
+[data-img] {
+    cursor: pointer;
+}
+
+.modal-lightbox {
+    background: transparent;
+    box-shadow: none;
+    border: none;
+}
+
+.modal-lightbox .modal-body {
+    position: relative;
 }
 
 /* Fin de estilos */

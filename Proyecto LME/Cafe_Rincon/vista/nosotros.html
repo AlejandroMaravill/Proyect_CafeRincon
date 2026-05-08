@@ -39,7 +39,7 @@
                         siendo el mismo: cocinar bien y recibir bien a quien llega.</p>
                 </div>
                 <div class="col-md-5">
-                    <div class="img-placeholder"></div>
+                    <div class="img-placeholder" data-img="../img/nuestra-historia.png" data-toggle="modal" data-target="#lightboxModal"></div>
                     <div class="row text-center estadisticas">
                         <div class="col-md-3 col-sm-6 stat-item">
                             <h2 class="estadistica-numero">20+</h2>
@@ -57,6 +57,39 @@
                             <h2 class="estadistica-numero">4.9</h2>
                             <p class="estadistica-label">CALIFICACIÓN</p>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- HISTORIA: PRIMEROS AÑOS -->
+    <section class="seccion-alt">
+        <div class="container">
+            <div class="titulo-s">
+                <h2>Los primeros años</h2>
+                <div class="raya"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card-instalacion">
+                        <h4>Primera sucursal</h4>
+                        <div class="card-instalacion-banner slot-historia-1" data-img="../img/historia/primera-sucursal.png" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <p>El local donde nació el sueño de Ana y Pedro en el año 2005.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card-instalacion">
+                        <h4>Los fundadores</h4>
+                        <div class="card-instalacion-banner slot-historia-2" data-img="../img/historia/fundadores.png" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <p>Ana y Pedro Molina en los primeros meses del café.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card-instalacion">
+                        <h4>La cocina original</h4>
+                        <div class="card-instalacion-banner slot-historia-3" data-img="../img/historia/primera-cocina.png" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <p>Donde todo empezó, con recetas de familia y amor.</p>
                     </div>
                 </div>
             </div>
@@ -83,6 +116,39 @@
                         <h3 class="titulo-mvv dorado"><i class='bx bx-bulb'></i> Visión</h3>
                         <p>Ser el restaurante de referencia en El Salvador para quienes buscan comida honesta, ambiente
                             tranquilo y un servicio que los haga sentir en familia.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INSTALACIONES HOY -->
+    <section class="seccion">
+        <div class="container">
+            <div class="titulo-s">
+                <h2>Nuestras instalaciones hoy</h2>
+                <div class="raya"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-6">
+                    <div class="card-instalacion">
+                        <div class="card-instalacion-banner salon-hoy" data-img="../img/instalaciones/salon-principal.png" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <h4>Salón Principal</h4>
+                        <p>Espacio amplio y acogedor con capacidad para 40 personas, ideal para reuniones familiares.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card-instalacion">
+                        <div class="card-instalacion-banner terraza-hoy" data-img="../img/instalaciones/terraza.png" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <h4>Terraza al Aire Libre</h4>
+                        <p>Disfruta de tu comida bajo el cielo de San Salvador, con ambiente relajado y vegetación natural.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                    <div class="card-instalacion">
+                        <div class="card-instalacion-banner cocina-hoy" data-img="../img/instalaciones/cocina.png" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <h4>Cocina Abierta</h4>
+                        <p>Nuestra cocina moderna donde preparamos cada platillo con los mismos estándares de siempre.</p>
                     </div>
                 </div>
             </div>
@@ -119,6 +185,32 @@
         </div>
     </section>
 
+    <!-- PRIMERA SUCURSAL -->
+    <section class="seccion-alt">
+        <div class="container">
+            <div class="titulo-s">
+                <h2>La primera sucursal</h2>
+                <div class="raya"></div>
+            </div>
+            <div class="card-promo">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="img-historia-destacada" data-img="../img/historia/sucursal-centro.png" data-toggle="modal" data-target="#lightboxModal"></div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="info-promo">
+                            <span class="etiqueta-promo">Desde el año 2000</span>
+                            <h3>Centro de San Salvador</h3>
+                            <p>En pleno corazón de la ciudad, abrimos las puertas de nuestra primera sucursal con apenas seis mesas y un sueño: llevar el sabor de casa a cada mesa. Este local histórico sigue operando y conserva la misma esencia de siempre.</p>
+                            <p>Es aquí donde nacieron nuestras recetas emblemáticas y donde muchos clientes nos acompañan desde el primer día.</p>
+                            <a href="contacto.html" class="btn-rincon">Visítanos</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- PIE -->
     <div id="fot"></div>
     <script>
@@ -140,8 +232,29 @@
                 });
         });
     </script>
+    <!-- LIGHTBOX MODAL -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modal-lightbox">
+                <div class="modal-body text-center" style="padding: 0;">
+                    <img id="lightbox-img" src="" alt="Vista ampliada" style="max-width: 100%; max-height: 85vh; display: block; margin: 0 auto;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar" style="position: absolute; top: 10px; right: 20px; color: #fff; font-size: 30px; opacity: 0.8;">&times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#lightboxModal').on('show.bs.modal', function(event) {
+                var trigger = $(event.relatedTarget);
+                var imgSrc = trigger.data('img');
+                $('#lightbox-img').attr('src', imgSrc);
+            });
+        });
+    </script>
 </body>
 
 </html>
