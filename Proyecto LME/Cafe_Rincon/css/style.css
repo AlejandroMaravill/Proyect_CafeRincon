@@ -546,6 +546,7 @@ a:hover { color: #B8943A; text-decoration: none; }
     border: 1px solid #DDD5C5;
     padding: 22px;
     margin-bottom: 20px;
+    min-height: 340px;
 }
 
 /* Banner instalaciones */
@@ -1405,6 +1406,31 @@ a:hover { color: #B8943A; text-decoration: none; }
     background-position: center;
 }
 
+/* Imagenes de reconocimientos y logros */
+.card-instalacion-banner.premio-trayectoria {
+    background-image: url('../img/reconocimientos/premio-trayectoria.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-instalacion-banner.prensa {
+    background-image: url('../img/reconocimientos/prensa.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-instalacion-banner.certificado {
+    background-image: url('../img/reconocimientos/certificado.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.card-instalacion-banner.premio-cafe {
+    background-image: url('../img/reconocimientos/premio-cafe.png');
+    background-size: cover;
+    background-position: center;
+}
+
 /* Primera sucursal destacada */
 .img-historia-destacada {
     width: 100%;
@@ -1428,6 +1454,27 @@ a:hover { color: #B8943A; text-decoration: none; }
 
 .modal-lightbox .modal-body {
     position: relative;
+}
+
+/* Cards de igual altura en Reconocimientos */
+.row-uniform {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.row-uniform > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.row-uniform .card-instalacion {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.row-uniform .card-instalacion p {
+    flex-grow: 1;
 }
 
 /* Fin de estilos */
