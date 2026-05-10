@@ -1492,9 +1492,6 @@ a:hover { color: #B8943A; text-decoration: none; }
 .fila-promo .card-promo {
     flex: 1;
     margin-bottom: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
 .promo-img-grid {
