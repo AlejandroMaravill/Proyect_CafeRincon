@@ -1477,4 +1477,73 @@ a:hover { color: #B8943A; text-decoration: none; }
     flex-grow: 1;
 }
 
+/* Promociones con imágenes */
+.fila-promo {
+    margin-bottom: 40px;
+    display: flex;
+    align-items: stretch;
+}
+
+.fila-promo > [class*='col-'] {
+    display: flex;
+    flex-direction: column;
+}
+
+.fila-promo .card-promo {
+    flex: 1;
+}
+
+.promo-img-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 100%;
+}
+
+.promo-img {
+    background-color: #E6EBE4;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: opacity 0.3s;
+}
+
+.promo-img:hover {
+    opacity: 0.9;
+}
+
+.promo-img.med {
+    width: calc(50% - 5px);
+    height: calc(50% - 5px);
+}
+
+.promo-img.lg {
+    width: 100%;
+    height: calc(50% - 5px);
+}
+
+/* Imágenes de promociones */
+.promo-parrilla-1 { background-image: url('../img/lomo-asado.jpg'); }
+.promo-parrilla-2 { background-image: url('../img/camarones-ajillo.jpg'); }
+.promo-parrilla-3 { background-image: url('../img/sopa-res.jpg'); }
+
+.promo-familia-1 { background-image: url('../img/pollo-tamarindo.jpg'); }
+.promo-familia-2 { background-image: url('../img/fettuccine-pesto.jpg'); }
+.promo-familia-3 { background-image: url('../img/ensalada-fresca.jpg'); }
+
+.promo-ejecutivo-1 { background-image: url('../img/ceviche-camaron.jpg'); }
+.promo-ejecutivo-2 { background-image: url('../img/rissotto-hongos.jpg'); }
+.promo-ejecutivo-3 { background-image: url('../img/flan-coco.jpg'); }
+
+@media (max-width: 768px) {
+    .fila-promo {
+        display: block;
+    }
+    .promo-img-grid {
+        height: 300px;
+        margin-top: 20px;
+    }
+}
+
 /* Fin de estilos */

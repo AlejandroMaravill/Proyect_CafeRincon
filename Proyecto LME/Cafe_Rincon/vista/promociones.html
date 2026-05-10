@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <!-- CARDS DE PROMO-->
+    <!-- PROMOCIONES CON IMÁGENES -->
     <section class="seccion">
         <div class="container">
             <div class="titulo-s">
@@ -31,38 +31,66 @@
                 <div class="raya"></div>
                 <p>Consulta siempre la vigencia antes de visitarnos. ¡Cambian cada semana!</p>
             </div>
-            <div class="row">
-                <div class="col-md-4 col-sm-6">
+
+            <!-- Promo 1: Martes de Parrilla -->
+            <div class="row fila-promo">
+                <div class="col-md-5 col-sm-6">
                     <div class="card-promo">
                         <h3><i class='bx bx-purchase-tag'></i> Martes de Parrilla</h3>
-                        <p>Lomo a las brasas + bebida de la casa + postre del día. ¡El martes más sabroso de la semana!
-                        </p>
+                        <p>Lomo a las brasas + bebida de la casa + postre del día. ¡El martes más sabroso de la semana!</p>
                         <p class="p-antes">Precio normal: $13.50</p>
                         <p class="p-nuevo">$10.00</p>
                         <a href="contacto.html" class="btn-rincon btn-promo-sm">Reservar</a>
                         <p class="vigencia">Solo martes, en el local.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-7 col-sm-6">
+                    <div class="promo-img-grid">
+                        <div class="promo-img med promo-parrilla-1" data-img="../img/lomo-asado.jpg" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <div class="promo-img med promo-parrilla-2" data-img="../img/camarones-ajillo.jpg" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <div class="promo-img lg promo-parrilla-3" data-img="../img/sopa-res.jpg" data-toggle="modal" data-target="#lightboxModal"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Promo 2: Menú Familiar -->
+            <div class="row fila-promo">
+                <div class="col-md-5 col-sm-6 col-md-push-7 col-sm-push-6">
                     <div class="card-promo verde-oscuro">
                         <h3><i class='bx bx-group'></i> Menú Familiar</h3>
-                        <p>Para 4 personas: 4 platos fuertes a elegir, 4 bebidas naturales y 2 postres para compartir.
-                        </p>
+                        <p>Para 4 personas: 4 platos fuertes a elegir, 4 bebidas naturales y 2 postres para compartir.</p>
                         <p class="p-antes">Valor estimado: $48.00</p>
                         <p class="p-nuevo">$36.00</p>
                         <a href="contacto.html" class="btn-rincon btn-promo-sm">Reservar</a>
                         <p class="vigencia">Viernes a domingo. Requiere reservación.</p>
                     </div>
                 </div>
-                <div class="col-md-4 col-sm-6">
+                <div class="col-md-7 col-sm-6 col-md-pull-5 col-sm-pull-6">
+                    <div class="promo-img-grid">
+                        <div class="promo-img med promo-familia-1" data-img="../img/pollo-tamarindo.jpg" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <div class="promo-img med promo-familia-2" data-img="../img/fettuccine-pesto.jpg" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <div class="promo-img lg promo-familia-3" data-img="../img/ensalada-fresca.jpg" data-toggle="modal" data-target="#lightboxModal"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Promo 3: Almuerzo Ejecutivo -->
+            <div class="row fila-promo">
+                <div class="col-md-5 col-sm-6">
                     <div class="card-promo azul-oscuro">
                         <h3><i class='bx bx-food-menu'></i> Almuerzo Ejecutivo</h3>
-                        <p>Entrada + plato fuerte del día + bebida natural. Rápido, rico y a buen precio para tu hora de
-                            almuerzo.</p>
+                        <p>Entrada + plato fuerte del día + bebida natural. Rápido, rico y a buen precio para tu hora de almuerzo.</p>
                         <p class="p-antes">Valor estimado: $17.00</p>
                         <p class="p-nuevo">$11.50</p>
                         <a href="contacto.html" class="btn-rincon btn-promo-sm">Reservar</a>
                         <p class="vigencia">Lun–Vie de 12:00 a 2:30 pm.</p>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-6">
+                    <div class="promo-img-grid">
+                        <div class="promo-img med promo-ejecutivo-1" data-img="../img/ceviche-camaron.jpg" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <div class="promo-img med promo-ejecutivo-2" data-img="../img/rissotto-hongos.jpg" data-toggle="modal" data-target="#lightboxModal"></div>
+                        <div class="promo-img lg promo-ejecutivo-3" data-img="../img/flan-coco.jpg" data-toggle="modal" data-target="#lightboxModal"></div>
                     </div>
                 </div>
             </div>
@@ -159,8 +187,29 @@
                 });
         });
     </script>
+    <!-- LIGHTBOX MODAL -->
+    <div class="modal fade" id="lightboxModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content modal-lightbox">
+                <div class="modal-body text-center" style="padding: 0;">
+                    <img id="lightbox-img" src="" alt="Vista ampliada" style="max-width: 100%; max-height: 85vh; display: block; margin: 0 auto;">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar" style="position: absolute; top: 10px; right: 20px; color: #fff; font-size: 30px; opacity: 0.8;">&times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#lightboxModal').on('show.bs.modal', function(event) {
+                var trigger = $(event.relatedTarget);
+                var imgSrc = trigger.data('img');
+                $('#lightbox-img').attr('src', imgSrc);
+            });
+        });
+    </script>
 </body>
 
 </html>
