@@ -933,6 +933,24 @@ a:hover { color: #B8943A; text-decoration: none; }
     background-position: center;
 }
 
+.img-slot-desayuno {
+    background-image: url('../img/promos/desayuno-rincon.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-slot-pescado {
+    background-image: url('../img/promos/filete-pescado.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-slot-alfredo {
+    background-image: url('../img/promos/pasta-dia.png');
+    background-size: cover;
+    background-position: center;
+}
+
 /* Estilos de nosotros */
 
 /* Titulo historia */
