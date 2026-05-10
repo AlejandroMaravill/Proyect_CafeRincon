@@ -1527,11 +1527,11 @@ a:hover { color: #B8943A; text-decoration: none; }
 /* Imágenes de promociones */
 .promo-parrilla-1 { background-image: url('../img/lomo-asado.jpg'); }
 .promo-parrilla-2 { background-image: url('../img/camarones-ajillo.jpg'); }
-.promo-parrilla-3 { background-image: url('../img/sopa-res.jpg'); }
+.promo-parrilla-3 { background-image: url('../img/tres-leches.jpg'); }
 
 .promo-familia-1 { background-image: url('../img/pollo-tamarindo.jpg'); }
 .promo-familia-2 { background-image: url('../img/fettuccine-pesto.jpg'); }
-.promo-familia-3 { background-image: url('../img/ensalada-fresca.jpg'); }
+.promo-familia-3 { background-image: url('../img/volcan-chocolate.jpg'); }
 
 .promo-ejecutivo-1 { background-image: url('../img/ceviche-camaron.jpg'); }
 .promo-ejecutivo-2 { background-image: url('../img/rissotto-hongos.jpg'); }
